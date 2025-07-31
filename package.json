@@ -1,0 +1,32 @@
+{
+  "name": "tokenforge-smartcontract",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:coverage": "hardhat coverage",
+    "deploy": "hardhat run scripts/deploy.ts",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "deploy:bsc": "hardhat run scripts/deploy.ts --network bsc",
+    "deploy:bsc-testnet": "hardhat run scripts/deploy.ts --network bscTestnet",
+    "deploy:polygon": "hardhat run scripts/deploy.ts --network polygon",
+    "deploy:polygon-mumbai": "hardhat run scripts/deploy.ts --network polygonMumbai",
+    "verify": "hardhat run scripts/verify.ts",
+    "deploy-token": "hardhat run scripts/deploy-token.ts",
+    "node": "hardhat node",
+    "clean": "hardhat clean"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "dotenv": "^17.2.1",
+    "hardhat": "^2.26.1"
+  }
+}
